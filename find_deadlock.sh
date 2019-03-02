@@ -21,7 +21,7 @@ New_deadlock() {
                                          
     if [ ! -e $2 ];then
       echo 1
-      mv $1  $2  ##判断上次输出是否为死锁，不是的话，直接返回1 表明最近一次是新的死锁。并将 此次输出信息重命名
+      mv $1  $2  ##判断上次输出是否为死锁，不是的话，直接返回1 表明最近一次是新的死锁。并将此次输出信息重命名
       exit 1
     else      ##否则对比两次的时间戳
       old_line_tile=$(grep -n "LATEST DETECTED DEADLOCK" $2 | cut -d ':' -f 1)
