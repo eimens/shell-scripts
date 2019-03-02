@@ -7,6 +7,8 @@ PORT=3306
 filedir="/proj/logs/deadlock_file"
 instance=buffalo
 instance_bi=moose
+test="abcd"
+test3="enf"
 
 New_deadlock() {
 
